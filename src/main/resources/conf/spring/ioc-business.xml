@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="businessInfo" class="io.github.lucienh.codegen.pojo.BusinessInfo">
+        <property name="businessTemplateDir" value="business"/>
+        <property name="businessDescList">
+            <list value-type="io.github.lucienh.codegen.pojo.BusinessDesc">
+                <bean class="io.github.lucienh.codegen.pojo.BusinessDesc">
+                    <property name="className" value="AlarmDetail"/>
+                    <property name="comment" value="报警详细"/>
+                    <property name="pkg" value="alarm"/>
+                </bean>
+                <bean class="io.github.lucienh.codegen.pojo.BusinessDesc">
+                    <property name="className" value="User"/>
+                    <property name="comment" value="用户管理"/>
+                    <property name="pkg" value="user"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+</beans>

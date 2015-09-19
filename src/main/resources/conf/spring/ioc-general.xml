@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="generalInfo"
+          class="io.github.lucienh.codegen.pojo.GeneralInfo">
+        <property name="basePackageName" value="io.github.lucienh.soc"/>
+        <property name="author" value="developer"/>
+        <property name="company" value="None"/>
+        <property name="team" value="POC"/>
+        <property name="foundedYear" value="1996"/>
+        <property name="outputDir" value="/home/h/workspace/gitlab/codegen/src/test/java"/>
+    </bean>
+</beans>
